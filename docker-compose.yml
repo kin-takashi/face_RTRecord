@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  face-rtrecord:
+    build: .
+    container_name: face_rtrecord
+    # Persistent volumes for data (host dirs auto-created)
+    volumes:
+      - ./dataset:/app/dataset
+      - ./videos:/app/videos
+      - ./predata:/app/predata
+      - ./embeddings:/app/embeddings
+      - ./logs:/app/logs
+    # Camera access (Linux/Mac: /dev/video0; Windows WSL adjust)
+    devices:
+      - /dev/video0:/dev/video0
+    # Privileged for camera (if needed)
+    privileged: true
+    # Interactive + network for potential DeepFace downloads
+    stdin_open: true
+    tty: true
+    # Default command
+    command: python 04_recognize.py --loop
+    # Ports if add web UI later
+    # ports:
+    #   - "5000:5000"
+

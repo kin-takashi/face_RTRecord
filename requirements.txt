@@ -1,0 +1,26 @@
+# Face Attendance System — Local Requirements
+# Cài đặt: pip install -r requirements.txt
+
+# Core
+deepface==0.0.93
+tf-keras>=2.15
+tensorflow-cpu>=2.15.0   # Dùng tensorflow-cpu để nhẹ hơn trên máy không có GPU
+                          # Nếu có GPU NVIDIA: đổi thành tensorflow>=2.15.0
+
+# Computer Vision
+opencv-contrib-python>=4.8.0
+numpy>=1.24,<2.0
+
+# Tính khoảng cách embedding
+scipy>=1.11
+
+# Tiến trình
+tqdm>=4.66
+
+# Xuất báo cáo (tùy chọn)
+openpyxl>=3.1
+pandas>=2.0
+
+# Face detector chính xác hơn (tùy chọn, chậm hơn)
+# Bỏ comment dòng dưới nếu muốn dùng RetinaFace thay OpenCV Haar:
+# retina-face>=0.0.17

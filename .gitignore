@@ -1,0 +1,38 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Model / data (DeepFace tải về)
+*.h5
+*.pkl
+*.pb
+
+# Bỏ qua tất cả ảnh
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+
+# Bỏ qua video
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
