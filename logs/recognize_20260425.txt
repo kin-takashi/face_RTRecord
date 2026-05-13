@@ -1,0 +1,3 @@
+09:30:55  NO_FACE                      0.0%  /tmp/_face_capture.jpg
+09:31:08  NO_FACE                      0.0%  /tmp/_face_capture.jpg
+09:31:16  NO_FACE                      0.0%  /tmp/_face_capture.jpg
