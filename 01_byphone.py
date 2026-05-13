@@ -1,9 +1,9 @@
 import cv2
 import numpy as np
-import requests
 import time
 import os
 os.makedirs("videos", exist_ok=True)
+
 
 
 # ================== CẤU HÌNH ==================
